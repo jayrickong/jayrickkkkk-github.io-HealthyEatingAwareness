@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Eating Awareness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e8fff1, #f2faf7);
+      color: #2f4f4f;
+    }
+
+    header {
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      padding: 20px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      background: white;
+      color: #185a9d;
+      padding: 8px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffeb3b;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      color: #185a9d;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      margin-left: 20px;
+      line-height: 1.8;
+    }
+
+    .quiz button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      border: none;
+      background: #43cea2;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .quiz button:hover {
+      background: #185a9d;
+    }
+
+    .pledge {
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      color: white;
+      text-align: center;
+    }
+
+    .pledge button {
+      background: white;
+      color: #ff5e62;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🥗 Healthy Eating Awareness</h1>
+  <p>Eat Smart, Live Strong</p>
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('foods')">Healthy vs Unhealthy</a>
+    <a href="#" onclick="showSection('diet')">Balanced Diet</a>
+    <a href="#" onclick="showSection('benefits')">Benefits</a>
+    <a href="#" onclick="showSection('quiz')">Quiz</a>
+    <a href="#" onclick="showSection('pledge')">Pledge</a>
+    <a href="#" onclick="showSection('feedback')">Feedback</a>
+  </nav>
+</header>
+
+<section id="home" class="active">
+  <div class="card">
+    <h2>Welcome!</h2>
+    <p>Healthy eating is about balance and making better choices every day. This website helps you learn how to eat wisely and stay fit, focused, and energetic.</p>
+    <p><strong>"Small choices today create a healthier tomorrow."</strong></p>
+    <img src="The-Malaysian-Healthy-Plate-11.png" 
+  </div>
+</section>
+
+<section id="foods">
+  <div class="card">
+    <h2>✅ Healthy Foods</h2>
+    <ul>
+      <li>Fruits & vegetables</li>
+      <li>Whole grains</li>
+      <li>Lean proteins</li>
+      <li>Water & natural juices</li>
+    </ul>
+    <img src="salad.jpeg"
+  </div>
+  <div class="card">
+    <h2>❌ Unhealthy Foods</h2>
+    <ul>
+      <li>Fast food</li>
+      <li>Sugary drinks</li>
+      <li>Instant noodles</li>
+      <li>Too many sweets</li>
+    </ul>
+    <img src="grilled fish.jpeg"
+  </div>
+</section>
+  
+  <section id="diet">
+  <div class="card">
+    <h2>Balanced Diet Guide</h2>
+    <ul>
+      <li>½ Fruits & Vegetables</li>
+      <li>¼ Protein</li>
+      <li>¼ Carbohydrates</li>
+    </ul>
+    <p><strong>Example Meal:</strong> Brown rice + grilled chicken + vegetables</p>
+  </div>
+</section>=
+<section id="benefits">
+  <div class="card">
+    <h2>Benefits of Healthy Eating</h2>
+    <ul>
+      <li>More energy</li>
+      <li>Better concentration</li>
+      <li>Stronger immune system</li>
+      <li>Happier mood</li>
+    </ul>
+  </div>
+</section>
+
+<section id="quiz" class="quiz">
+  <div class="card">
+    <h2>Is This Healthy? Quiz</h2>
+    <p>Which drink is healthier?</p>
+    <button onclick="alert('Correct! Water is the best choice! 💧')">Water</button>
+    <button onclick="alert('Oops! Try again.')">Soda</button>
+  </div>
+</section>
+
+<section id="pledge" class="pledge card">
+  <h2>Healthy Eating Pledge</h2>
+  <p>I promise to take care of my body by choosing healthy food every day.</p>
+  <button onclick="alert('Great! You have committed to healthy eating! 💚')">I Commit!</button>
+</section>
+
+<footer>
+  © 2025 Healthy Eating Awareness | Created for School Project
+</footer>
+
+<script>
+  function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => section.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+  
+  <section id="feedback">
+  <div class="card">
+    <h2>💬 Feedback & Comments</h2>
+    <p>We would love to hear your thoughts about this website!</p>
+
+    <input type="text" id="name" placeholder="Your name"
+           style="width:100%;padding:10px;margin:8px 0;border-radius:10px;border:1px solid #ccc;">
+
+    <textarea id="comment" rows="4" placeholder="Write your comment here..."
+              style="width:100%;padding:10px;border-radius:10px;border:1px solid #ccc;"></textarea>
+
+    <button id="submitComment"
+            style="margin-top:10px;background:#43cea2;color:white;border:none;padding:10px 15px;border-radius:20px;cursor:pointer;">
+      Submit
+    </button>
+
+    <h3 style="margin-top:20px;">User Comments:</h3>
+    <div id="commentList"></div>
+  </div>
+
+  <script>
+    (function(){
+      const storageKey = 'hea_comments_v1'; // key for localStorage
+      const maxComments = 200;
+
+      // escape HTML to avoid injection
+      function escapeHtml(str) {
+        return String(str).replace(/[&<>"']/g, function(m){
+          return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]);
+        });
+      }
+
+      // render comments from localStorage
+      function renderComments() {
+        const commentList = document.getElementById('commentList');
+        commentList.innerHTML = '';
+        const items = JSON.parse(localStorage.getItem(storageKey) || '[]');
+        if (items.length === 0) {
+          commentList.innerHTML = '<p style="color:#666">No comments yet — be the first!</p>';
+          return;
+        }
+        items.forEach(item => {
+          const box = document.createElement('div');
+          box.className = 'card';
+          box.style.marginBottom = '10px';
+          const time = new Date(item.time).toLocaleString();
+          box.innerHTML = <strong>${escapeHtml(item.name)}</strong> <small style="color:#666">· ${time}</small>
+                           <p style="margin-top:6px">${escapeHtml(item.text)}</p>;
+          commentList.appendChild(box);
+        });
+      }
+
+      // add comment and persist
+      function addComment() {
+        const nameEl = document.getElementById('name');
+        const commentEl = document.getElementById('comment');
+        const name = nameEl.value.trim() || 'Anonymous';
+        const text = commentEl.value.trim();
+
+        if (!text) {
+          alert('Please write a comment before submitting.');
+          return;
+        }
+
+        const items = JSON.parse(localStorage.getItem(storageKey) || '[]');
+        items.unshift({ name, text, time: Date.now() }); // newest first
+        localStorage.setItem(storageKey, JSON.stringify(items.slice(0, maxComments)));
+
+        nameEl.value = '';
+        commentEl.value = '';
+        renderComments();
+      }
+
+      // wire the button
+      document.getElementById('submitComment').addEventListener('click', addComment);
+
+      // initial render
+      document.addEventListener('DOMContentLoaded', renderComments);
+      // also render immediately in case this script runs after DOMContentLoaded
+      renderComments();
+    })();
+  </script>
+</section>
+
+</body>
+</html>
